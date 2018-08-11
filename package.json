@@ -1,0 +1,24 @@
+{
+  "name": "meanstacktodo",
+  "version": "1.0.0",
+  "description": "Prime Weekend Challenge Three",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tr4vi5/MEANstackTODO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tr4vi5/MEANstackTODO/issues"
+  },
+  "homepage": "https://github.com/Tr4vi5/MEANstackTODO#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.7"
+  }
+}
