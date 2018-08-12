@@ -57,7 +57,7 @@ myApp.controller('TaskManager', function($http){
     vm.deleteTask = function(deleteTaskId){
         $http({
             method: 'DELETE',
-            url: '/delete/' + deleteTaskId
+            url: '/tasks/delete/' + deleteTaskId
         }).then(function(response){
             vm.appendTasks();
         }).catch(function(error){
