@@ -37,7 +37,6 @@ router.post('/', (req, res)=>{
         res.sendStatus(500);
     });
 });//end POST route
-
 router.put('/complete/:id', (req, res)=>{
     console.log('Update', req.params.id);
     Tasks.findOne({_id: req.params.id}).then((foundTask)=>{
@@ -50,6 +49,14 @@ router.put('/complete/:id', (req, res)=>{
         });
     });
 });// end /complete/:id PUT route
-
+router.delete('/delete/:id', (req, res)=>{
+    Tasks.findByIdAndRemove(req.params.id).then((response)=>{
+        console.log('Object ID', req.params.id, 'removed from database');
+        res.sendStatus(200);
+    }).catch((error)=>{
+        console.log('Error in DELETE on server', error);
+        res.sendStatus(500);
+    });
+});
 //export
 module.exports = router;

@@ -45,7 +45,7 @@
                         <td>{{task.description}}</td>
                         <td>{{task.notes}}</td>
                         <td><input type="checkbox" id="taskComplete" ng-click="tm.completeTask(task._id)" ng-checked="task.complete"><label for="taskComplete">Check if complete</label></td>
-                        <td><button>Delete</button></td>
+                        <td><input type="button" ng-click="tm.deleteTask(task._id)" value="Delete"></td>
                     </tr>
                 </tbody>
             </table>

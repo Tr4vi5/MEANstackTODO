@@ -52,7 +52,18 @@ myApp.controller('TaskManager', function($http){
         }).catch(function (error){
             alert('Error in completeTask', error);
         });
-    };
+    };// end completeTask function
+
+    vm.deleteTask = function(deleteTaskId){
+        $http({
+            method: 'DELETE',
+            url: '/delete/' + deleteTaskId
+        }).then(function(response){
+            vm.appendTasks();
+        }).catch(function(error){
+            alert('Unable to delete task', error);
+        });
+    };// end deleteTask function
 
     vm.appendTasks();
 })
