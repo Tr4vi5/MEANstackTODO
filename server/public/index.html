@@ -18,12 +18,12 @@
             <h2>Task Manager</h2>
         </div>
         <div class="userInputs">
-            <form id="taskForm">
+            <form id="taskForm" ng-submit="tm.sendTask()">
                 <input type="text" placeholder="Task" ng-model="taskIn">
                 <input type="text" placeholder="Category" ng-model="categoryIn">
                 <input type="text" placeholder="Description" ng-model="descriptionIn">
                 <input type="text" placeholder="Notes" ng-model="notesIn">
-                <input type="checkbox" id="checkComplete" ng-model="taskIn">
+                <input type="checkbox" id="checkComplete" ng-model="completeIn">
                 <label for="checkComplete">Completed</label>
                 <input type="button" value="Submit Task">
             </form>
@@ -41,11 +41,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Task</td>
-                        <td>Category</td>
-                        <td>Description</td>
-                        <td>Notes</td>
+                    <tr ng-repeat="task in tm.taskList">
+                        <td>{{task.task}}</td>
+                        <td>{{task.category}}</td>
+                        <td>{{task.description}}</td>
+                        <td>{{task.notes}}</td>
                         <td><input type="checkbox" id="taskComplete"><label for="taskComplete">Check if complete</label></td>
                         <td><button>Delete</button></td>
                     </tr>
