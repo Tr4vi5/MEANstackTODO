@@ -19,13 +19,13 @@
         </div>
         <div class="userInputs">
             <form id="taskForm" ng-submit="tm.sendTask()">
-                <input type="text" placeholder="Task" ng-model="taskIn">
-                <input type="text" placeholder="Category" ng-model="categoryIn">
-                <input type="text" placeholder="Description" ng-model="descriptionIn">
-                <input type="text" placeholder="Notes" ng-model="notesIn">
-                <input type="checkbox" id="checkComplete" ng-model="completeIn">
+                <input type="text" placeholder="Task" ng-model="tm.taskIn">
+                <input type="text" placeholder="Category" ng-model="tm.categoryIn">
+                <input type="text" placeholder="Description" ng-model="tm.descriptionIn">
+                <input type="text" placeholder="Notes" ng-model="tm.notesIn">
+                <input type="checkbox" id="checkComplete" ng-model="tm.completeIn">
                 <label for="checkComplete">Completed</label>
-                <input type="button" value="Submit Task">
+                <input type="submit" value="Submit Task">
             </form>
         </div>
         <div>

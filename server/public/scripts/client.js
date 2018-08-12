@@ -25,7 +25,9 @@ myApp.controller('TaskManager', function($http){
             description: vm.descriptionIn,
             notes: vm.notesIn,
             complete: vm.completeIn
-        }
+        };
+        console.log(taskToAdd);
+        
         $http({
             method: 'POST',
             url: '/tasks',
@@ -37,4 +39,6 @@ myApp.controller('TaskManager', function($http){
             alert('Error in sendTask POST', error);
         });
     };//end sendTask function
+
+    vm.appendTasks();
 })
