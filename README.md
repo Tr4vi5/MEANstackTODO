@@ -31,10 +31,10 @@ Feature a
 Feature b
 
 Next Steps
-[] - Create a front end that allows a user to enter a task.
-    - [] Task properties: {task: string, category: string, description: string, notes: string, complete: boolean}
+[x] - Create a front end that allows a user to enter a task.
+    - [] Task properties: {task: string, category: string, description: string, notes: string, date: string, complete: boolean}
     - [] Each task should have a "complete task" checkbox and "delete task" button
-[] - Set up the server and connect it to Mongo using mongoose.
+[x] - Set up the server and connect it to Mongo using mongoose.
 [] - Create a schema in a router to send task data to the Mongo database.
 [] - Use angular models to create an object from the inputs to POST to the router on the server and the Mongo database collection.
 [] - Once a task is added to the database, the front end should make a GET request to the database in order to to display the array of          objects from the server.
