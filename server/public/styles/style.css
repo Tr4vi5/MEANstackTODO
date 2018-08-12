@@ -1,0 +1,9 @@
+.userInputs{
+    margin: 3em auto;
+}
+#taskForm{
+    text-align: center;
+}
+#taskTable{
+    width: 100%;
+}

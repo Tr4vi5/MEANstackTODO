@@ -18,7 +18,7 @@
             <h2>Task Manager</h2>
         </div>
         <div class="userInputs">
-            <form>
+            <form id="taskForm">
                 <input type="text" placeholder="Task" ng-model="taskIn">
                 <input type="text" placeholder="Category" ng-model="categoryIn">
                 <input type="text" placeholder="Description" ng-model="descriptionIn">
@@ -29,7 +29,7 @@
             </form>
         </div>
         <div>
-            <table>
+            <table id="taskTable">
                 <thead>
                     <tr>
                         <th>Task</th>
@@ -37,7 +37,7 @@
                         <th>Description</th>
                         <th>Notes</th>
                         <th>Complete</th>
-                        <th>Delete</th>
+                        <th>Delete Task</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,8 +46,8 @@
                         <td>Category</td>
                         <td>Description</td>
                         <td>Notes</td>
-                        <td>Complete</td>
-                        <td>Delete</td>
+                        <td><input type="checkbox" id="taskComplete"><label for="taskComplete">Check if complete</label></td>
+                        <td><button>Delete</button></td>
                     </tr>
                 </tbody>
             </table>
