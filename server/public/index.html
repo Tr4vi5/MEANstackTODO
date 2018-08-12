@@ -23,8 +23,6 @@
                 <input type="text" placeholder="Category" ng-model="tm.categoryIn">
                 <input type="text" placeholder="Description" ng-model="tm.descriptionIn">
                 <input type="text" placeholder="Notes" ng-model="tm.notesIn">
-                <input type="checkbox" id="checkComplete" ng-model="tm.completeIn">
-                <label for="checkComplete">Completed</label>
                 <input type="submit" value="Submit Task">
             </form>
         </div>
@@ -41,12 +39,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="task in tm.taskList">
+                    <tr ng-repeat="task in tm.taskList" ng-class="task.complete ? 'completedTask' : 'incompleteTask' ">
                         <td>{{task.task}}</td>
                         <td>{{task.category}}</td>
                         <td>{{task.description}}</td>
                         <td>{{task.notes}}</td>
-                        <td><input type="checkbox" id="taskComplete"><label for="taskComplete">Check if complete</label></td>
+                        <td><input type="checkbox" id="taskComplete" ng-click="tm.completeTask(task._id)" ng-checked="task.complete"><label for="taskComplete">Check if complete</label></td>
                         <td><button>Delete</button></td>
                     </tr>
                 </tbody>

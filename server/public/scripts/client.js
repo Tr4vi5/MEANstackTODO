@@ -23,8 +23,7 @@ myApp.controller('TaskManager', function($http){
             task: vm.taskIn,
             category: vm.categoryIn,
             description: vm.descriptionIn,
-            notes: vm.notesIn,
-            complete: vm.completeIn
+            notes: vm.notesIn
         };
         console.log(taskToAdd);
         
@@ -35,10 +34,25 @@ myApp.controller('TaskManager', function($http){
         }).then(function(response){
             console.log('In sendTask POST', response.data);
             vm.appendTasks();
+            vm.taskIn = '';
+            vm.categoryIn = '';
+            vm.descriptionIn = '';
+            vm.notesIn = '';
         }).catch(function(error){
             alert('Error in sendTask POST', error);
         });
     };//end sendTask function
+
+    vm.completeTask = function(taskId){
+        $http({
+            method: 'PUT',
+            url: '/tasks/complete/' + taskId
+        }).then(function (response){
+            vm.appendTasks();
+        }).catch(function (error){
+            alert('Error in completeTask', error);
+        });
+    };
 
     vm.appendTasks();
 })

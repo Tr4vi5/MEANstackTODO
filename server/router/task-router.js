@@ -37,5 +37,19 @@ router.post('/', (req, res)=>{
         res.sendStatus(500);
     });
 });//end POST route
+
+router.put('/complete/:id', (req, res)=>{
+    console.log('Update', req.params.id);
+    Tasks.findOne({_id: req.params.id}).then((foundTask)=>{
+        foundTask.complete = !foundTask.complete;
+        foundTask.save().then((response)=>{
+            res.sendStatus(200);
+        }).catch((error)=>{
+            console.log('Error in tasks/complete/ PUT', error);
+            res.sendStatus(500);
+        });
+    });
+});// end /complete/:id PUT route
+
 //export
 module.exports = router;

@@ -1,6 +1,12 @@
 .userInputs{
     margin: 3em auto;
 }
+
+.completedTask{
+    background-color: green;
+    color: white;
+}
+
 #taskForm{
     text-align: center;
 }
