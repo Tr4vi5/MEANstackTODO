@@ -48,7 +48,7 @@ Next Steps
 
 [x] - a PUT request that changes the tasks "complete" property should be written for the complete task checkbox, and the DOM should change to reflect this change
 
-[] - a DELETE request that splices the object from the array on the database and updates the DOM should be written
+[x] - a DELETE request that splices the object from the array on the database and updates the DOM should be written
 
 [] - CSS styling to finish it off
 

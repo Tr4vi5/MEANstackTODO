@@ -13,9 +13,9 @@
 </head>
 
 <body ng-app="myApp">
-    <div class="container" ng-controller="TaskManager as tm">
-        <div class="jumbotron">
-            <h2>Task Manager</h2>
+    <div id="mainContent" class="container" ng-controller="TaskManager as tm">
+        <div id="headerBox" class="jumbotron">
+            <h2>Life Goals Task Manager</h2>
         </div>
         <div class="userInputs">
             <form id="taskForm" ng-submit="tm.sendTask()">
@@ -27,15 +27,15 @@
             </form>
         </div>
         <div>
-            <table id="taskTable">
+            <table id="taskTable" class="table">
                 <thead>
-                    <tr>
-                        <th>Task</th>
+                    <tr class="mainTh">
+                        <th class="endTdLeft">Task</th>
                         <th>Category</th>
                         <th>Description</th>
                         <th>Notes</th>
-                        <th>Complete</th>
-                        <th>Delete Task</th>
+                        <th class="tdInputs">Complete</th>
+                        <th class="tdInputs endTdRight">Delete Task</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,8 +44,8 @@
                         <td>{{task.category}}</td>
                         <td>{{task.description}}</td>
                         <td>{{task.notes}}</td>
-                        <td><input type="checkbox" id="taskComplete" ng-click="tm.completeTask(task._id)" ng-checked="task.complete"><!--<label for="taskComplete">Check if complete</label>--></td>
-                        <td><input type="button" ng-click="tm.deleteTask(task._id)" value="Delete"></td>
+                        <td class="tdInputs"><input type="checkbox" id="taskComplete" ng-click="tm.completeTask(task._id)" ng-checked="task.complete"><!--<label for="taskComplete">Check if complete</label>--></td>
+                        <td class="tdInputs"><input type="button" ng-click="tm.deleteTask(task._id)" value="Delete"></td>
                     </tr>
                 </tbody>
             </table>
