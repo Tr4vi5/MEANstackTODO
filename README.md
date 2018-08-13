@@ -2,30 +2,41 @@
 Prime Weekend Challenge Three
 
 Name of Application
+
 To-do list web app built using M(ongo)E(xpress)A(ngular.js)N(ode) full-stack.
 
 Built With
+
 Mongo
+
 Express
+
 Angular.js
+
 Node.js
+
 Bootstrap
 
 Getting Started
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 Installing
+
 Steps to get the development environment running.
 
 1. Download this project.
 2. npm install
 3. npm start
-4. And so on...
+4. Navigate to localhost:5000 in your browser of choice
+5. Enjoy!
 
 Screen Shot
-Include one or two screen shots of your project here (optional). Remove if unused.
+
+![Screenshot of project](https://i.imgur.com/02hlFxS.png)
 
 Completed Features
+
 - Task manager site that allows the user to post new tasks to a mongo database and update the DOM with the list of tasks immediately.
 
 [x] - Create a front end that allows a user to enter a task.
