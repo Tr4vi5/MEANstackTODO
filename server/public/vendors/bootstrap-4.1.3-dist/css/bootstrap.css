@@ -1548,7 +1548,7 @@ pre code {
 } */
 
 .table .table {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 .table-sm th,
@@ -1578,11 +1578,15 @@ pre code {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.452);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.199);
 }
 
 .table-hover tbody tr:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.075);
   /* border: 2px rgb(18, 44, 59) solid; */
   opacity: 0.8;
   
