@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5000;
 const mongoose = require('mongoose');
 const taskRouter = require('./router/task-router');
-const mongoURI = 'mongodb://localhost:27017/taskapp';
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/taskapp';
 //uses
 app.use(bodyParser.json()); // allows us to use req.body for client requests with angular.js
 app.use(express.static('server/public')); // uses server/public as our client side

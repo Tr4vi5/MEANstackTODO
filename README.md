@@ -1,44 +1,44 @@
-# MEANstackTODO
-Prime Weekend Challenge Three
 
-Life Goals Task Manager
+# Life Goals Task Manager
 
-Built With
+Task manager site that allows the user to post new tasks to a mongo database and update the DOM with the list of tasks immediately.
+___
 
-Mongo
-
-Express
-
-Angular.js
-
-Node.js
-
-Bootstrap
-
-
+## Built With
+* HTML
+* CSS
+* Javascript
+* Mongo
+* Express
+* Angular.js
+* Node.js
+* Bootstrap
+___
+## Installing
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-Installing
 
 1. Download this project.
 2. npm install
 3. npm start
 4. Navigate to localhost:5000 in your browser of choice
 5. Enjoy!
-
+___
 Screen Shot
 
 ![Screenshot of project](https://i.imgur.com/02hlFxS.png)
+___
+## Completed Features
+* Create a new task with properties: task name, category, description, and notes.
+* Send that new task to the database using the "Submit Task" button.
+* Automatically pulls all tasks from the database and show them on the page.
+* Mark tasks as complete using the checkbox and visually verify that they are completed.
+* Delete specific tasks from the database using the delete button on each table row.
 
-Completed Features
+___
+### Completed Steps:
+[x] - Create a front end that allows a user to enter a task with properties: task name, category, description, and notes.
 
-- Task manager site that allows the user to post new tasks to a mongo database and update the DOM with the list of tasks immediately.
-
-[x] - Create a front end that allows a user to enter a task.
-
-    - [x] Task properties: {task: string, category: string, description: string, notes: string, date: string, complete: boolean}
-
-    - [x] Each task should have a "complete task" checkbox and "delete task" button
+[x] Each task should have a "complete task" checkbox and "delete task" button
 
 [x] - Set up the server and connect it to Mongo using mongoose.
 
@@ -62,17 +62,14 @@ Completed Features
 
 [x] - Add front-end validation to the 'make-a-task' form.
 
-Next Steps
+### Next Steps
 
 [] - Add a category field for the task. Allow users to filter by task category.
 
 [] - Adjust the logic so that completed tasks are brought to the bottom of the page, where the remaining tasks left to complete are brought to the top of the list.
 
-
-Authors
-
+___
+## Author
 Travis Dunn
-
-Acknowledgments
-
+## Acknowledgments
 Prime Digital Academy

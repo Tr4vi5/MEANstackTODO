@@ -1587,7 +1587,7 @@ pre code {
 
 .table-hover tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.075);
-  /* border: 2px rgb(18, 44, 59) solid; */
+  border-left: 2px rgb(18, 44, 59) solid;
   opacity: 0.8;
   
 }
