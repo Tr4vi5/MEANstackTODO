@@ -40,7 +40,7 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="task in tm.taskList" ng-class="task.complete ? 'completedTask' : 'incompleteTask' ">
-                        <td>{{task.task}}</td>
+                        <td><strong>{{task.task}}</strong></td>
                         <td>{{task.category}}</td>
                         <td>{{task.description}}</td>
                         <td>{{task.notes}}</td>
