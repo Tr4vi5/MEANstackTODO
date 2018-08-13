@@ -1,9 +1,7 @@
 # MEANstackTODO
 Prime Weekend Challenge Three
 
-Name of Application
-
-To-do list web app built using M(ongo)E(xpress)A(ngular.js)N(ode) full-stack.
+Life Goals Task Manager
 
 Built With
 
@@ -17,13 +15,10 @@ Node.js
 
 Bootstrap
 
-Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 Installing
-
-Steps to get the development environment running.
 
 1. Download this project.
 2. npm install
