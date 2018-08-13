@@ -14,7 +14,8 @@ myApp.controller('TaskManager', function ($http) {
             console.log('Got tasks:', response.data);
             vm.taskList = response.data;
         }).catch(function (error) {
-            alert('Error in GET', error);
+            console.log('Error in appendTasks', error);
+            alert('Cannot get tasks');
         })
     };// end appendTasks function
 
@@ -38,7 +39,8 @@ myApp.controller('TaskManager', function ($http) {
             vm.descriptionIn = '';
             vm.notesIn = '';
         }).catch(function (error) {
-            alert('Error in sendTask POST', error);
+            console.log('Error sendTask function', error);
+            alert('Cannot add task');
         });
     };//end sendTask function
 
@@ -49,7 +51,8 @@ myApp.controller('TaskManager', function ($http) {
         }).then(function (response) {
             vm.appendTasks();
         }).catch(function (error) {
-            alert('Error in completeTask', error);
+            console.log('Error in completeTask', error);
+            alert('Cannot mark as complete');
         });
     };// end completeTask function
 
@@ -63,7 +66,8 @@ myApp.controller('TaskManager', function ($http) {
             }).then(function (response) {
                 vm.appendTasks();
             }).catch(function (error) {
-                alert('Unable to delete task', error);
+                console.log('Error in deleteTask', error);
+                alert('Unable to delete task');
             });
         }
     };// end deleteTask function
