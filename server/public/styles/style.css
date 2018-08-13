@@ -1,6 +1,6 @@
 body{
     background-color: #333;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 th, td{
@@ -48,6 +48,8 @@ th, td{
 
 #mainContent{
     background-color: #cccccc;
-    height: 100vh;
+    height: auto;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 }
 

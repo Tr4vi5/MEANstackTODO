@@ -28,10 +28,6 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 Completed Features
 - Task manager site that allows the user to post new tasks to a mongo database and update the DOM with the list of tasks immediately.
 
-
-
-Next Steps
-
 [x] - Create a front end that allows a user to enter a task.
 
     - [x] Task properties: {task: string, category: string, description: string, notes: string, date: string, complete: boolean}
@@ -50,7 +46,22 @@ Next Steps
 
 [x] - a DELETE request that splices the object from the array on the database and updates the DOM should be written
 
-[] - CSS styling to finish it off
+[x] - CSS styling to finish it off
+
+[x] - Implement Bootstrap to take the visuals of the page up a notch.
+
+[x] - Move the inputs into a form and use ng-submit so that the user can hit enter to add a new task.
+
+[x] - In whatever fashion you would like, create an 'are you sure: yes / no' option when deleting a task. Once again, you can interpret this however you would like.
+
+[x] - Add front-end validation to the 'make-a-task' form.
+
+Next Steps
+
+[] - Add a category field for the task. Allow users to filter by task category.
+
+[] - Adjust the logic so that completed tasks are brought to the bottom of the page, where the remaining tasks left to complete are brought to the top of the list.
+
 
 Authors
 Travis Dunn

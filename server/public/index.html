@@ -19,9 +19,9 @@
         </div>
         <div class="userInputs">
             <form id="taskForm" ng-submit="tm.sendTask()">
-                <input type="text" placeholder="Task" ng-model="tm.taskIn">
-                <input type="text" placeholder="Category" ng-model="tm.categoryIn">
-                <input type="text" placeholder="Description" ng-model="tm.descriptionIn">
+                <input type="text" placeholder="Task" ng-model="tm.taskIn" required>
+                <input type="text" placeholder="Category" ng-model="tm.categoryIn" required>
+                <input type="text" placeholder="Description" ng-model="tm.descriptionIn" required>
                 <input type="text" placeholder="Notes" ng-model="tm.notesIn">
                 <input type="submit" value="Submit Task">
             </form>
