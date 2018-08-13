@@ -64,7 +64,9 @@ Next Steps
 
 
 Authors
+
 Travis Dunn
 
 Acknowledgments
+
 Prime Digital Academy

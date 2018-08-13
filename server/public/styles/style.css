@@ -1,6 +1,7 @@
 body{
     background-color: #333;
-    
+    background-image: url('/images/bg3.jpg');
+    background-size: stretch;
 }
 
 th, td{
@@ -16,12 +17,12 @@ th, td{
 }
 
 .completedTask{
-    background-color: green;
+    background-color: rgb(0, 68, 0);
     color: white;
 }
 
 .mainTh{
-    background-color: rgb(5, 0, 32);
+    background-color: rgb(18, 44, 59);
     color: white;
 }
 
@@ -42,7 +43,7 @@ th, td{
 }
 
 #headerBox{
-    background-color: rgb(5, 0, 32);
+    background-color: rgb(18, 44, 59);
     color:white;
 }
 
